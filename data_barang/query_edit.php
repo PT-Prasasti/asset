@@ -9,5 +9,5 @@
 
     $query  = "UPDATE data_barang SET nama_barang = '$nama_barang', satuan = '$satuan', keterangan = '$keterangan', jenis = '$jenis' WHERE kode_barang = '$kode_barang'";
     mysqli_query($koneksi, $query);
-    echo "<script>alert('Data Berhasil di Ubah');window.location='index.php'</script>";
+    echo "<script>alert('Data Changed Successfully');window.location='index.php'</script>";
 ?>

@@ -73,15 +73,38 @@
                     <div class="content-side content-side-full">
                         <ul class="nav-main nav-link">
                             <li>
-                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'dashboard')) ? 'active' : '' ?>" href="../dashboard/index.php"><i class="si si-cup"></i><span class="sidebar-mini-hide">Dashboard</span></a>
+                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'dashboard')) ? 'active' : '' ?>" href="#"><i class="si si-cup"></i><span class="sidebar-mini-hide">Dashboard</span></a>
+                            </li>
+                            <li>
+                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'stock')) ? 'active' : '' ?>" href="../stock/index.php"><i class="fa fa-book"></i><span class="sidebar-mini-hide">Latest Stock</span></a>
                             </li>
                             
+                            <li class="nav-main-heading">
+                                <span class="text-white"><b>Transaction</b></span>
+                            </li>
+                            <li>
+                                <a class="nav-submenu ?= (strpos($_SERVER['REQUEST_URI'], 'barang_masuk')) ? 'active' : '' ?>" data-toggle="nav-submenu" href="#"><i class="fa fa-plus-square"></i><span class="sidebar-mini-hide">Incoming</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="../barang_masuk/index.php">List Incoming</a>
+                                        </li>
+                                        <li>
+                                            <a href="../barang_masuk/form_add.php">Add Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            <!--  <li>
+                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'data_barang')) ? 'active' : '' ?>" href="../data_barang/index.php"><i class="fa fa-chevron-circle-left"></i><span class="sidebar-mini-hide">Barang Keluar</span></a>
+                            </li>
+                             <li>
+                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'data_barang')) ? 'active' : '' ?>" href="../data_barang/index.php"><i class="fa fa-gears"></i><span class="sidebar-mini-hide">Service</span></a>
+                            </li> -->
 
                             <li class="nav-main-heading">
                                 <span class="text-white"><b>Data Master</b></span>
                             </li>
                             <li>
-                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'data_barang')) ? 'active' : '' ?>" href="../data_barang/index.php"><i class="fa fa-file-text-o"></i><span class="sidebar-mini-hide">Data Barang</span></a>
+                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'data_barang')) ? 'active' : '' ?>" href="../data_barang/index.php"><i class="fa fa-file-text-o"></i><span class="sidebar-mini-hide">Data Item</span></a>
                             </li>
                         </ul>
                     </div>
