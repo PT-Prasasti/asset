@@ -72,11 +72,11 @@
                     </div>
                     <div class="content-side content-side-full">
                         <ul class="nav-main nav-link">
-                            <li>
+                            <!-- <li>
                                 <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'dashboard')) ? 'active' : '' ?>" href="#"><i class="si si-cup"></i><span class="sidebar-mini-hide">Dashboard</span></a>
-                            </li>
+                            </li> -->
                             <li>
-                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'stock')) ? 'active' : '' ?>" href="../stock/index.php"><i class="fa fa-book"></i><span class="sidebar-mini-hide">Latest Stock</span></a>
+                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'dashboard')) ? 'active' : '' ?>" href="../dashboard/index.php"><i class="fa fa-book"></i><span class="sidebar-mini-hide">Latest Stock</span></a>
                             </li>
                             
                             <li class="nav-main-heading">
@@ -126,7 +126,7 @@
                                 <i class="fa fa-angle-down ml-5"></i>
                             </button>
                             <div class="dropdown-menu dropdown-menu-right min-width-200" aria-labelledby="page-header-user-dropdown">
-                                <a class="dropdown-item" href="op_auth_signin.html">
+                                <a class="dropdown-item" href="../query_logout.php">
                                     <i class="si si-logout mr-5"></i> Sign Out
                                 </a>
                             </div>
