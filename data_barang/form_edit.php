@@ -86,7 +86,7 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-md-12 text-right">
-                            <a type="button" class="btn btn-danger" href="form_index.php">
+                            <a type="button" class="btn btn-danger" href="index.php">
                                 <i class="fa fa-arrow-circle-o-left mr-5"></i>BACK
                             </a>
                             <button type="submit" class="btn btn-success" href="form_add.php">
