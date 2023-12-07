@@ -14,13 +14,14 @@
                         <tr>
                             <th class="text-center">Item Code</th>
                             <th class="text-center">Item Name</th>
-                            <th class="text-center">Stock</th>
                             <th class="text-center">Price</th>
+                            <th class="text-center">Stock</th>
+                            <th class="text-center">Unit</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                            $hasil = mysqli_query($koneksi, "SELECT data_barang.`kode_barang`, data_barang.`nama_barang`, data_harga.`harga_beli`,data_barang.`stok`
+                            $hasil = mysqli_query($koneksi, "SELECT data_barang.`kode_barang`, data_barang.`nama_barang`, data_harga.`harga_beli`,data_barang.`stok` , data_barang.`satuan`
                                 FROM data_barang JOIN data_harga
                                 ON data_barang.`kode_barang`=data_harga.`kode_barang` 
                                 GROUP BY data_barang.`kode_barang`");
@@ -31,6 +32,7 @@
                             <td><?= $data['nama_barang'] ?></td>
                             <td class="text-right"><?= number_format($data['harga_beli'], 0, ".", ".") ?></td>
                             <td class="text-center"><?= $data['stok'] ?></td>
+                            <td class="text-center"><?= $data['satuan'] ?></td>
                         </tr>
                         <?php } ?>
                     </tbody>

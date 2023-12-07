@@ -6,8 +6,9 @@
     $satuan         = $_POST['satuan'];
     $keterangan     = $_POST['keterangan'];
     $jenis          = $_POST['jenis'];
+    $kategori          = $_POST['kategori'];
 
-    $query  = "INSERT INTO data_barang SET kode_barang = '$kode_barang', nama_barang = '$nama_barang', jenis = '$jenis', keterangan = '$keterangan', satuan = '$satuan',  stok = '0'";
+    $query  = "INSERT INTO data_barang SET kode_barang = '$kode_barang', nama_barang = '$nama_barang', kategori = '$kategori',  jenis = '$jenis', keterangan = '$keterangan', satuan = '$satuan',  stok = '0'";
     mysqli_query($koneksi, $query);
 
     $query2 = "INSERT INTO data_harga SET kode_barang = '$kode_barang', harga_beli = '0', harga_beli_old = '0', harga_jual = '0', harga_jual_old = '0'";

@@ -21,6 +21,7 @@
                             <th class="text-center">Item Name</th>
                             <th class="text-center">Unit</th>
                             <th class="text-center">Type</th>
+                            <th class="text-center">Category</th>
                             <th class="text-center">Information</th>
                             <th class="text-center"><i class="fa fa-cog"></i></th>
                         </tr>
@@ -35,6 +36,7 @@
                             <td><?= $data['nama_barang'] ?></td>
                             <td class="text-center"><?= $data['satuan'] ?></td>
                             <td class="text-center"><?= $data['jenis'] ?></td>
+                            <td class="text-center"><?= $data['kategori'] ?></td>
                             <td><?= $data['keterangan'] ?></td>
                             <td class="text-center">
                                 <a href="form_edit.php?kode_barang=<?= $data['kode_barang'] ?>" type="button" class="btn btn-warning"><i class="fa fa-pencil-square"></i></a> |

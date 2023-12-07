@@ -36,7 +36,7 @@
                         <label class="col-lg-1 col-form-label text-right">:</label>
                         <div class="col-lg-9">
                             <select class="form-control" name="jenis">
-                                <option selected disabled>- Pilih -</option>
+                                <option selected disabled>- Select -</option>
                                 <option value="Product">Product</option>
                                 <option value="Bergerak">Bergerak</option>
                                 <option value="Non Bergerak">Non Bergerak</option>
@@ -48,14 +48,28 @@
                         <label class="col-lg-1 col-form-label text-right">:</label>
                         <div class="col-lg-9">
                             <select class="form-control" name="satuan">
-                                <option selected disabled>- Pilih -</option>
+                                <option selected disabled>- Select -</option>
                                 <option value="PCS">PCS</option>
                                 <option value="Set">Set</option>
                                 <option value="Kg">Kg</option>
+                                <option value="Gram">Gram</option>
                                 <option value="Liter">Liter</option>
                                 <option value="KWH">KWH</option>
                                 <option value="Box">Box</option>
                                 <option value="Roll">Roll</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-2 col-form-label">Category</label>
+                        <label class="col-lg-1 col-form-label text-right">:</label>
+                        <div class="col-lg-9">
+                            <select class="form-control" name="satuan">
+                                <option selected disabled>- Select -</option>
+                                <option value="Office">Office</option>
+                                <option value="Kitchen">Kitchen</option>
+                                <option value="Transport">Transport</option>
+                                <option value="SPARTA">SPARTA</option>
                             </select>
                         </div>
                     </div>
