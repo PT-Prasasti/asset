@@ -4,7 +4,7 @@
                         Crafted with <i class="fa fa-heart text-pulse"></i> by <a class="font-w600" href="#">RIFAN</a>
                     </div>
                     <div class="float-left">
-                        <a class="font-w600" href="#">E-PRASS</a> &copy; <span class="js-year-copy"></span>
+                        <a class="font-w600" href="#">PRASASTI</a> &copy; <span class="js-year-copy"></span>
                     </div>
                 </div>
             </footer>
