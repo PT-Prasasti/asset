@@ -64,7 +64,7 @@
                         <label class="col-lg-2 col-form-label">Category</label>
                         <label class="col-lg-1 col-form-label text-right">:</label>
                         <div class="col-lg-9">
-                            <select class="form-control" name="satuan">
+                            <select class="form-control" name="kategori">
                                 <option selected disabled>- Select -</option>
                                 <option value="Office">Office</option>
                                 <option value="Kitchen">Kitchen</option>
