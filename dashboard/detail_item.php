@@ -1,4 +1,4 @@
-<?php include '../layout/header.php'; ?>
+<?php include '../layout/header_detail.php'; ?>
 
 <main id="main-container">
     <div class="content row">
